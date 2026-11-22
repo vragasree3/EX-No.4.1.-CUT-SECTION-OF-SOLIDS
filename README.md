@@ -11,36 +11,46 @@ To create the solid model from given drawing and section the solid model
 4. 2.5 Mbps or faster download; 500 Kbps or faster upload 
 
 ## PROCEDURE:
-1.	Open new file and then select sketch icon.
-2.	Select the plane for sketching. 
-3.	Use sketching features (line, circle, arc, rectangle, polygon, etc.,) to draw the given sketch
+1. Create a New Design
+Open Autodesk Fusion 360, create a new design, and set the units to match the reference drawing.
+<img width="237" height="482" alt="Screenshot 2026-11-13 210155" src="https://github.com/user-attachments/assets/25543ccc-5d13-4139-b796-92b6cfb362a1" />
 
-![image](https://user-images.githubusercontent.com/113594316/198825274-c6a8d3ee-fb19-4641-b915-8d2e000c40a8.png)
+2. Create the Base Plate
+Start a sketch on the XY plane.
+Draw an obround profile: two rounded ends joined by straight, parallel sides.
+Dimension its overall length and width according to the drawing.
+Finish the sketch and use Extrude to create the plate thickness.
 
-4.	Use sketch modifying features (cut, trim, mirror, move, etc.,) to edit the sketch.
+3. Add the Mounting Holes
+Select the top face of the base plate and start a sketch.
+Draw a circle near the center of each rounded end, positioned and dimensioned to match the drawing.
+Use Extrude > Cut with Through All to create the holes.
 
-![image](https://user-images.githubusercontent.com/113594316/198825282-0d3de4b8-b6d9-446a-ae2a-461955057399.png)
+4. Create the Cylindrical Boss
+Start a sketch on the top face of the plate.
+Draw a circle centered between the mounting holes and dimension it to the boss’s outside diameter.
+Extrude the circle to the specified height, with the operation set to Join.
 
-5.	Use inspect feature to measure the dimensions of sketch.
+5. Create the Stepped Center Bore
+On the top face of the boss, sketch the larger bore circle and cut it to the depth shown in the drawing.
+Sketch a smaller, concentric circle and cut it through the remaining boss to create the central opening.
+Use the drawing dimensions for both bore diameters and depths.
 
-![image](https://user-images.githubusercontent.com/113594316/198825301-194365b4-69d2-42ad-8545-a68d3ca1f442.png)
+6. Add the Radial Hole
+Create a sketching plane at the side of the boss where the radial hole is shown.
+Draw and position the hole using the drawing’s diameter and height dimensions.
+Cut inward until the hole meets the center bore.
+<img width="311" height="417" alt="Screenshot 2026-11-13 210611" src="https://github.com/user-attachments/assets/3717d4a2-b849-4cd3-98da-5a5baba93505" />
 
-6.	After finishing the sketch use finish sketch option to finalize the sketch.
-
-![image](https://user-images.githubusercontent.com/113594316/198825314-b90f6aba-da26-4f0d-8d61-a03e8ad0d765.png)
-
-7.Use extrude option to convert 3D model from sketch
-
-![image](https://user-images.githubusercontent.com/113594316/198825328-205fac21-1322-4d67-894b-6fd92e454e26.png)
-
-8.Use revolve option to convert 2D to 3D.
-
-![image](https://user-images.githubusercontent.com/113594316/198825337-455049de-f053-48b8-9dd0-ebeb189c0dde.png)
+7. Finish and Check the Model
+Add any fillets or chamfers shown in the drawing. Check the model from the top, side, and isometric views, then save the design with an appropriate project name.
+<img width="364" height="173" alt="Screenshot 2026-11-09 171520" src="https://github.com/user-attachments/assets/025b9fe8-3904-4fc9-a4df-4b845906e0bb" />
 
 ## INPUT:
 ![image](https://user-images.githubusercontent.com/113594316/198825351-b514a4e7-06af-4ee0-8197-e8267749f8a8.png)
 
 ## OUTPUT:
+<img width="988" height="708" alt="Screenshot 2026-11-22 125526" src="https://github.com/user-attachments/assets/081502c0-5e6e-4fd5-9d48-6b6006172cee" />
 
 ## RESULT:
 
